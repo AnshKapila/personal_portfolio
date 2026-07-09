@@ -1,42 +1,43 @@
 "use client";
-import { motion } from 'motion/react';
+import { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { cn } from "../lib/utils";
 
 export function SkillsSection() {
-    const list1 = [
-        {
-            title: "Business-Goal Mapping",
-            description: "I map interface decisions to business objectives. For example, during the Ezinore freelance project, I redesigned the marketing layout structure to enhance product inquiries by 30 percent."
-        },
-        {
-            title: "User Research & Analysis",
-            description: "I analyze physical workflows to identify UX friction points. In the Clickpic case study, this involved researching queue bottlenecks to reduce waiting time to under 60 seconds."
-        },
-        {
-            title: "Persona-Driven Design Decisions",
-            description: "I design interactions matching user motivations. For VigorX, I structured guided user flows that incremented daily active app usage by 28 percent."
-        },
-        {
-            title: "Usability Testing & Iteration",
-            description: "I test layout variations directly with users. At Techolution, I resolved developer flow friction to improve daily task workflow efficiency by 50 to 84 percent."
-        },
-        {
-            title: "Information Architecture",
-            description: "I structure content schemas for wholesale catalog discovery. On the Metline platform, I translated legacy product data into intuitive, mobile-ready categories."
-        }
-    ];
+    const [activeIndex, setActiveIndex] = useState(0);
 
-    const list2 = [
+    const skills = [
         {
-            title: "Generative AI Image Refinement",
-            description: "I direct generative models to produce visual assets, then apply manual Photoshop grids and composition controls. This approach delivered over 80 premium visuals for the Bergaria campaign in 6 days."
+            title: "UX Strategy & Research",
+            evidence: "Redesigned marketing and user dashboard systems to drive actionable customer trust.",
+            statNumber: "30%",
+            statLabel: "Inquiry Increase (Ezinore)",
+            imageSrc: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
+            bulletColor: "bg-blue-400"
         },
         {
-            title: "AI-Augmented Content & Coding",
-            description: "I write prompt rules to generate web components, then inspect, refine, and write custom logic to ensure code quality. I utilized this method to build Fintrack, accelerating ideation by 50 percent."
+            title: "AI-Augmented Design",
+            evidence: "Produced over 80 premium visual catalog and banner campaign layouts in six days using generative pipelines.",
+            statNumber: "80+",
+            statLabel: "Visuals in 6 Days (Bergaria)",
+            imageSrc: "https://images.unsplash.com/photo-1604871000636-074fa5117945?q=80&w=1200&auto=format&fit=crop",
+            bulletColor: "bg-emerald-400"
         },
         {
-            title: "Rapid Prototyping & Layouts",
-            description: "I compile client feedback into layout rules, direct interactive prototyping systems, and refine page speeds. I applied this method to optimize loading performance for local search results on FitYard."
+            title: "Interface & Prototyping",
+            evidence: "Designed habit-forming workout structures to reduce onboarding drop-off and boost consistency.",
+            statNumber: "28%",
+            statLabel: "Consistency Boost (VigorX)",
+            imageSrc: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=1200&auto=format&fit=crop",
+            bulletColor: "bg-purple-400"
+        },
+        {
+            title: "Frontend Execution",
+            evidence: "Tested developer tools to identify navigation bottlenecks and optimize interaction steps.",
+            statNumber: "84%",
+            statLabel: "Workflow Gain (Techolution)",
+            imageSrc: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1200&auto=format&fit=crop",
+            bulletColor: "bg-pink-400"
         }
     ];
 
@@ -46,94 +47,139 @@ export function SkillsSection() {
         "HTML", "CSS", "JavaScript"
     ];
 
+    // Double elements for infinite loop effect
+    const doubleTools = [...tools, ...tools, ...tools];
+
     return (
-        <section id="skills-section" className="py-24 px-6 md:px-12 lg:px-16 bg-black border-t border-white/10">
-            <div className="max-w-7xl mx-auto space-y-24">
+        <section id="skills" className="py-24 px-6 md:px-12 lg:px-16 bg-[#111111] overflow-hidden rounded-t-[2.5rem]">
+            <div className="max-w-7xl mx-auto w-full space-y-24">
                 
-                {/* Intro */}
-                <div>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading italic tracking-tight text-white mb-6">
-                        Skills & Methodology
-                    </h2>
-                    <p className="text-lg font-light leading-relaxed text-gray-400 max-w-2xl">
-                        I combine user experience research with modern development workflows, building high-performing interfaces supported by measurable results.
-                    </p>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+                    {/* LEFT IMAGE CONTAINER */}
+                    <div className="relative w-full aspect-square md:aspect-[4/5] rounded-3xl overflow-hidden bg-zinc-900 border border-white/5 order-2 lg:order-1">
+                        <AnimatePresence mode="wait">
+                            <motion.img 
+                                key={activeIndex} 
+                                src={skills[activeIndex].imageSrc} 
+                                alt={skills[activeIndex].title} 
+                                initial={{ opacity: 0, scale: 1.05 }} 
+                                animate={{ opacity: 1, scale: 1 }} 
+                                exit={{ opacity: 0 }} 
+                                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }} 
+                                className="absolute inset-0 w-full h-full object-cover grayscale-[0.2]"
+                            />
+                        </AnimatePresence>
+                    </div>
+
+                    {/* RIGHT CONTENT CONTAINER */}
+                    <div className="flex flex-col order-1 lg:order-2">
+                        <h3 className="text-2xl md:text-3xl font-semibold text-white tracking-tight mb-10">
+                            My Skills
+                        </h3>
+
+                        <div className="flex flex-col mb-16">
+                            {skills.map((skill, i) => {
+                                const isActive = activeIndex === i;
+                                return (
+                                    <div 
+                                        key={i} 
+                                        className="relative cursor-pointer group py-6" 
+                                        onMouseEnter={() => setActiveIndex(i)} 
+                                        onClick={() => setActiveIndex(i)}
+                                    >
+                                        <h2 className={cn(
+                                            "text-4xl md:text-5xl lg:text-6xl font-heading italic tracking-tight transition-colors duration-300", 
+                                            isActive ? "text-white" : "text-white/40 group-[&:not(:hover)]:text-white/40 group-hover:text-white/70"
+                                        )}>
+                                            {skill.title}
+                                        </h2>
+
+                                        <AnimatePresence>
+                                            {isActive && (
+                                                <motion.div 
+                                                    initial={{ height: 0, opacity: 0 }} 
+                                                    animate={{ height: "auto", opacity: 1 }} 
+                                                    exit={{ height: 0, opacity: 0 }} 
+                                                    transition={{ duration: 0.3, ease: "easeInOut" }} 
+                                                    className="overflow-hidden"
+                                                >
+                                                    <div className="pt-5 pb-3">
+                                                        <p className="text-gray-400 font-light text-base leading-relaxed">
+                                                            {skill.evidence}
+                                                        </p>
+                                                    </div>
+                                                </motion.div>
+                                            )}
+                                        </AnimatePresence>
+
+                                        {/* Base separator line */}
+                                        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-white/10" />
+
+                                        {/* Animated Active Line */}
+                                        {isActive && (
+                                            <motion.div 
+                                                layoutId="activeSkillLine" 
+                                                className="absolute bottom-0 left-0 h-[2px] bg-white z-10" 
+                                                initial={false} 
+                                                transition={{
+                                                    type: "spring",
+                                                    stiffness: 300,
+                                                    damping: 30,
+                                                }} 
+                                                style={{ width: "35%" }}
+                                            />
+                                        )}
+                                    </div>
+                                );
+                            })}
+                        </div>
+
+                        {/* Bottom Dynamic Section showing the Stat Callout */}
+                        <div className="min-h-[120px]">
+                            <AnimatePresence mode="wait">
+                                <motion.div 
+                                    key={activeIndex} 
+                                    initial={{ opacity: 0, y: 10 }} 
+                                    animate={{ opacity: 1, y: 0 }} 
+                                    exit={{ opacity: 0, y: -10 }} 
+                                    transition={{ duration: 0.3 }} 
+                                    className="flex items-center gap-6"
+                                >
+                                    <div className="text-4xl md:text-5xl font-heading italic text-[#F24E1E] shrink-0">
+                                        {skills[activeIndex].statNumber}
+                                    </div>
+                                    <div>
+                                        <p className="text-xs uppercase tracking-wider text-white/50 mb-1">Outcome Metric</p>
+                                        <p className="text-sm font-light text-gray-300">{skills[activeIndex].statLabel}</p>
+                                    </div>
+                                </motion.div>
+                            </AnimatePresence>
+                        </div>
+                    </div>
                 </div>
 
-                {/* Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                    
-                    {/* UX Process */}
-                    <div className="space-y-8">
-                        <div className="border-b border-white/10 pb-4">
-                            <h3 className="text-xl font-heading italic text-[#F24E1E] uppercase tracking-wider">
-                                01. UX Process & Strategy
-                            </h3>
-                        </div>
-                        <div className="space-y-6">
-                            {list1.map((item, index) => (
-                                <motion.div 
-                                    key={index}
-                                    initial={{ opacity: 0, y: 15 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.5, delay: index * 0.05 }}
-                                    className="space-y-2"
+                {/* HORIZONTAL INFINITE MARQUEE */}
+                <div className="w-full space-y-6 pt-12 border-t border-white/5">
+                    <h4 className="text-xs uppercase tracking-widest text-white/40 text-center font-bold">
+                        Tools & Technologies
+                    </h4>
+                    <div className="relative w-full overflow-hidden whitespace-nowrap py-4">
+                        {/* Gradient Mask for fading sides */}
+                        <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[#111] to-transparent z-10 pointer-events-none" />
+                        <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#111] to-transparent z-10 pointer-events-none" />
+                        
+                        {/* Marquee Track looping left-to-right */}
+                        <div className="flex w-max gap-8 animate-marquee-right">
+                            {doubleTools.map((tool, idx) => (
+                                <span 
+                                    key={idx} 
+                                    className="text-2xl md:text-3xl font-heading italic text-white/30 hover:text-white transition-colors cursor-default"
                                 >
-                                    <h4 className="text-lg font-medium text-white">{item.title}</h4>
-                                    <p className="text-gray-400 font-light text-sm leading-relaxed">{item.description}</p>
-                                </motion.div>
+                                    {tool} &nbsp; ✦
+                                </span>
                             ))}
                         </div>
                     </div>
-
-                    {/* AI augmented */}
-                    <div className="space-y-16">
-                        
-                        <div className="space-y-8">
-                            <div className="border-b border-white/10 pb-4">
-                                <h3 className="text-xl font-heading italic text-[#F24E1E] uppercase tracking-wider">
-                                    02. AI-Augmented Design Workflow
-                                </h3>
-                            </div>
-                            <div className="space-y-6">
-                                {list2.map((item, index) => (
-                                    <motion.div 
-                                        key={index}
-                                        initial={{ opacity: 0, y: 15 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ duration: 0.5, delay: index * 0.05 }}
-                                        className="space-y-2"
-                                    >
-                                        <h4 className="text-lg font-medium text-white">{item.title}</h4>
-                                        <p className="text-gray-400 font-light text-sm leading-relaxed">{item.description}</p>
-                                    </motion.div>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* Tools list */}
-                        <div className="space-y-6">
-                            <div className="border-b border-white/10 pb-4">
-                                <h3 className="text-xl font-heading italic text-[#F24E1E] uppercase tracking-wider">
-                                    03. Tools
-                                </h3>
-                            </div>
-                            <div className="flex flex-wrap gap-3">
-                                {tools.map((tool, index) => (
-                                    <span 
-                                        key={index} 
-                                        className="px-4 py-2 rounded-lg bg-zinc-950 border border-white/10 text-sm text-gray-300 font-light"
-                                    >
-                                        {tool}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
 
             </div>

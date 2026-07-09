@@ -91,8 +91,10 @@ const allProjects = [
         detailImage2: vigorxDetail2,
         outcomeHeading: "My Outcomes",
         outcomeDescription: "The VigorX design shows how simplifying mobile interactions can help turn complex habits into daily routines. I delivered a complete design system in Figma, complete with interactive prototypes that show how to keep users engaged and support simple app scaling.",
-        buttonText: "Protoype",
-        buttonLink: "http://vigorxtest.lovable.app/",
+        buttonText: "See full case Study",
+        buttonLink: "https://www.behance.net/gallery/229855363/VigorX-Fitness-Lifestyle-App-Case-Study",
+        secondaryButtonText: "Prototype",
+        secondaryButtonLink: "http://vigorxtest.lovable.app/",
         bannerImage: vigorxBanner
     },
     {

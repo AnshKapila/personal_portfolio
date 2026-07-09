@@ -39,9 +39,18 @@ export function ProjectPage() {
           </FadeIn>
 
           <FadeIn delayMs={300} durationMs={800}>
-            {project.buttonLink && project.buttonLink.trim() !== '' && (<a href={project.buttonLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3.5 bg-white text-black rounded-lg font-semibold text-[15px] hover:bg-gray-200 transition-colors">
-                {project.buttonText || "View Live"}
-              </a>)}
+            <div className="flex flex-wrap gap-4">
+              {project.buttonLink && project.buttonLink.trim() !== '' && (
+                <a href={project.buttonLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3.5 bg-white text-black rounded-lg font-semibold text-[15px] hover:bg-gray-200 transition-colors">
+                  {project.buttonText || "View Live"}
+                </a>
+              )}
+              {project.secondaryButtonLink && project.secondaryButtonLink.trim() !== '' && (
+                <a href={project.secondaryButtonLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3.5 bg-[#111111] border border-white/10 text-white rounded-lg font-semibold text-[15px] hover:bg-white/5 transition-colors">
+                  {project.secondaryButtonText || "Prototype"}
+                </a>
+              )}
+            </div>
           </FadeIn>
         </div>
 

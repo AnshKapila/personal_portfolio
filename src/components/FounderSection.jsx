@@ -14,21 +14,18 @@ export function FounderSection() {
             
             {/* Confined Image Container */}
             <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-[2rem] overflow-hidden shrink-0 shadow-[0_8px_30px_rgb(0,0,0,0.2)] border border-white/20 relative">
-               <img src={founderAvatar?.src || founderAvatar} referrerPolicy="no-referrer" alt="Ansh Kapila - Founder and Product Designer" className="absolute inset-0 w-full h-full object-cover transition-all duration-[1500ms]"/>
+               <img src={founderAvatar?.src || founderAvatar} referrerPolicy="no-referrer" alt="Ansh Kapila - Product Designer and Content Creator" className="absolute inset-0 w-full h-full object-cover transition-all duration-[1500ms]"/>
             </motion.div>
 
             {/* Text Content */}
             <div className="flex flex-col justify-center md:pt-4">
-              <motion.p initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-xs text-white/90 uppercase tracking-widest font-bold mb-4">
-                The Founder
-              </motion.p>
               
               <motion.h2 initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-4xl md:text-5xl lg:text-6xl font-heading italic tracking-tight mb-2 text-white">
                 Ansh Kapila
               </motion.h2>
               
               <motion.p initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="text-[#FFD1C2] font-semibold text-lg md:text-xl tracking-wide mb-6">
-                Founder & Product Designer
+                Product Designer & Content Creator
               </motion.p>
               
               <motion.p initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="text-lg font-light leading-relaxed max-w-lg text-white/95">

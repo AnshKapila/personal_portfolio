@@ -10,32 +10,24 @@ export function SkillsSection() {
         {
             title: "UX Strategy & Research",
             evidence: "Redesigned marketing and user dashboard systems to drive actionable customer trust.",
-            statNumber: "30%",
-            statLabel: "Inquiry Increase (Ezinore)",
             imageSrc: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
             bulletColor: "bg-blue-400"
         },
         {
             title: "AI-Augmented Design",
             evidence: "Produced over 80 premium visual catalog and banner campaign layouts in six days using generative pipelines.",
-            statNumber: "80+",
-            statLabel: "Visuals in 6 Days (Bergaria)",
             imageSrc: "https://images.unsplash.com/photo-1604871000636-074fa5117945?q=80&w=1200&auto=format&fit=crop",
             bulletColor: "bg-emerald-400"
         },
         {
             title: "Interface & Prototyping",
             evidence: "Designed habit-forming workout structures to reduce onboarding drop-off and boost consistency.",
-            statNumber: "28%",
-            statLabel: "Consistency Boost (VigorX)",
             imageSrc: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=1200&auto=format&fit=crop",
             bulletColor: "bg-purple-400"
         },
         {
             title: "Frontend Execution",
             evidence: "Tested developer tools to identify navigation bottlenecks and optimize interaction steps.",
-            statNumber: "84%",
-            statLabel: "Workflow Gain (Techolution)",
             imageSrc: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1200&auto=format&fit=crop",
             bulletColor: "bg-pink-400"
         }
@@ -77,7 +69,7 @@ export function SkillsSection() {
                             My Skills
                         </h3>
 
-                        <div className="flex flex-col mb-16">
+                        <div className="flex flex-col">
                             {skills.map((skill, i) => {
                                 const isActive = activeIndex === i;
                                 return (
@@ -132,28 +124,6 @@ export function SkillsSection() {
                                     </div>
                                 );
                             })}
-                        </div>
-
-                        {/* Bottom Dynamic Section showing the Stat Callout */}
-                        <div className="min-h-[120px]">
-                            <AnimatePresence mode="wait">
-                                <motion.div 
-                                    key={activeIndex} 
-                                    initial={{ opacity: 0, y: 10 }} 
-                                    animate={{ opacity: 1, y: 0 }} 
-                                    exit={{ opacity: 0, y: -10 }} 
-                                    transition={{ duration: 0.3 }} 
-                                    className="flex items-center gap-6"
-                                >
-                                    <div className="text-4xl md:text-5xl font-heading italic text-[#F24E1E] shrink-0">
-                                        {skills[activeIndex].statNumber}
-                                    </div>
-                                    <div>
-                                        <p className="text-xs uppercase tracking-wider text-white/50 mb-1">Outcome Metric</p>
-                                        <p className="text-sm font-light text-gray-300">{skills[activeIndex].statLabel}</p>
-                                    </div>
-                                </motion.div>
-                            </AnimatePresence>
                         </div>
                     </div>
                 </div>

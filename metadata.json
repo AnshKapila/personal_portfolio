@@ -1,0 +1,6 @@
+{
+  "name": "Intent Studios",
+  "description": "A premium, conversion-focused agency website for Intent Studios, featuring a dark minimalist aesthetic, custom glassmorphism, dynamic background brightness polling, and micro-interactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -29,7 +29,7 @@ export function Navbar({ isHeroBright = false }) {
     return (<nav className={cn("fixed top-0 left-0 w-full z-50 transition-colors duration-500 animate-in fade-in duration-1000", isScrolled ? "bg-black/80 backdrop-blur-md" : "bg-transparent")}>
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-16 py-4 flex items-center justify-between">
         <Link href="/" className={cn("cursor-pointer transition-colors duration-500", textColor)} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          <Logo className="h-6 w-auto"/>
+          <Logo className="h-[30px] w-auto"/>
         </Link>
 
         {/* Tertiary buttons/links */}

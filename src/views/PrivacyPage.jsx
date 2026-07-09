@@ -42,36 +42,35 @@ export function PrivacyPage() {
               1. Introduction & Overview
             </h2>
             <p>
-              Welcome to Intent Studio. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website, utilize our services, or inquire about our website audits and design packages.
+              Welcome to my personal portfolio website. I am committed to protecting your privacy. This Privacy Policy explains how I collect, use, and safeguard your personal information when you visit my website, check my work, or send an inquiry.
             </p>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-medium font-heading italic text-white">
-              2. Data We Collect
+              2. Data I Collect
             </h2>
             <p>
-              We collect information that you voluntarily provide to us when submitting inquiries, requesting audits, or scheduling consultation calls. This may include:
+              I collect information that you voluntarily provide when submitting contact forms or scheduling calls. This may include:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-zinc-400 font-normal text-sm md:text-base">
               <li>Contact details (e.g., name, email address, WhatsApp number)</li>
-              <li>Business information (e.g., website URL, project objectives, current budget)</li>
-              <li>Analytics data collected automatically (e.g., browser type, general geography, page interactions)</li>
+              <li>Project information (e.g., details about your project, timeline, budget)</li>
+              <li>Analytics data collected automatically (e.g., browser type, page interactions)</li>
             </ul>
           </section>
 
           <section className="space-y-4">
             <h2 className="text-xl md:text-2xl font-medium font-heading italic text-white">
-              3. How We Use Your Information
+              3. How I Use Your Information
             </h2>
             <p>
-              We use your data solely to deliver the requested services and maintain high design standards. Your information is used to:
+              I use your data solely to communicate with you and review design requirements. Your information is used to:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-zinc-400 font-normal text-sm md:text-base">
-              <li>Perform website audits and prepare professional design reviews.</li>
-              <li>Schedule and conduct video/WhatsApp consultations.</li>
-              <li>Enhance our digital studio experience and optimize conversion metrics.</li>
-              <li>Comply with necessary legal and regulatory obligations.</li>
+              <li>Review project details and prepare responses.</li>
+              <li>Schedule calls and discuss design opportunities.</li>
+              <li>Improve my portfolio experience.</li>
             </ul>
           </section>
 
@@ -80,7 +79,7 @@ export function PrivacyPage() {
               4. Data Sharing & Security
             </h2>
             <p>
-              We respect your trust. We do not sell, rent, or trade your personal data. We implement strict, industry-compliant security parameters to prevent unauthorized access, alteration, or disclosure of your project data.
+              I respect your trust. I do not sell, rent, or trade your personal data. I implement security parameters to prevent unauthorized access or disclosure of your project data.
             </p>
           </section>
 
@@ -89,16 +88,16 @@ export function PrivacyPage() {
               5. Your Rights
             </h2>
             <p>
-              You retain full authority over your data. You may request access to, correction of, or permanent deletion of your personal details at any time by contacting our team directly.
+              You retain full authority over your data. You may request access to, correction of, or permanent deletion of your personal details at any time by reaching out directly.
             </p>
           </section>
 
           <section className="space-y-4 pt-6 border-t border-white/10">
             <h2 className="text-xl md:text-2xl font-medium font-heading italic text-white">
-              6. Contact Us
+              6. Contact Me
             </h2>
             <p className="text-zinc-400 text-sm md:text-base">
-              For any privacy-related queries, please email us directly or connect via our WhatsApp portal.
+              For any privacy-related queries, please email me directly or connect via my WhatsApp link.
             </p>
           </section>
         </div>

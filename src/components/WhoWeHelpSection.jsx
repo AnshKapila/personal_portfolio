@@ -5,17 +5,17 @@ export function WhoWeHelpSection() {
     const pillars = [
         {
             title: "Founders",
-            content: "You have the vision, but need a partner to translate it into a digital product that actually converts.",
+            content: "You have the vision, but need a product designer to translate it into a digital product that drives action.",
             image: foundersImg
         },
         {
             title: "Growing Businesses",
-            content: "Your existing platform is holding you back. You need a scalable system to handle your next phase of growth.",
+            content: "Your existing platform holds you back. You need a structured UI system to handle your next phase.",
             image: growingBusinessesImg
         },
         {
             title: "Teams lacking direction",
-            content: "You have internal resources but lack a cohesive strategy. We provide the blueprint and lead the execution.",
+            content: "You have builders but lack user flow strategy. I establish the design framework to guide development.",
             image: teamsLackingDirectionImg
         }
     ];
@@ -24,10 +24,10 @@ export function WhoWeHelpSection() {
         
         <div className="lg:w-1/3">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading italic tracking-tight mb-6 text-white">
-            Who we help
+            Ideal partners
           </h2>
           <p className="text-lg font-light leading-relaxed text-gray-400">
-            We partner with ambitious teams ready to move beyond generic templates and focus on measurable outcomes.
+            I partner with ambitious operators ready to move beyond generic layouts and focus on functional product value.
           </p>
         </div>
 

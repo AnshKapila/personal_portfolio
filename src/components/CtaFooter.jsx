@@ -17,28 +17,24 @@ export function CtaFooter() {
         </h2>
         
         <p className="text-lg font-light leading-relaxed text-gray-400 mb-12 max-w-lg">
-          Book a free strategy call. See what AI-powered design can do. No commitment, no pressure. Just possibilities.
+          Let us chat about your digital goals. See how tailored design and structured execution can elevate your brand. No commitment, just possibilities.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mt-4 px-4 sm:px-0">
-          <button className="liquid-glass-strong rounded-lg w-full sm:w-[240px] px-6 py-3 text-white font-medium text-sm hover:bg-white/10 transition-colors">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mt-4 px-4 sm:px-0">
+          <a href="https://wa.me/919821687437" target="_blank" rel="noopener noreferrer" className="bg-white text-black rounded-lg w-full sm:w-[240px] px-6 py-3.5 font-medium text-sm hover:bg-white/90 transition-colors flex items-center justify-center">
             Book a Call
-          </button>
-          <button className="bg-white text-black rounded-lg w-full sm:w-[240px] px-6 py-3 font-medium text-sm hover:bg-white/90 transition-colors">
-            View Pricing
-          </button>
+          </a>
         </div>
       </div>
 
       {/* Footer Bar */}
       <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-24 mt-32 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
         <span className="text-white/40 text-xs font-body">
-          &copy; 2026 Studio. All rights reserved.
+          &copy; 2026 Ansh Kapila. All rights reserved.
         </span>
         
         <div className="flex items-center gap-6">
           <Link href="/privacy" className="text-white/40 text-xs font-body hover:text-white transition-colors">Privacy</Link>
-          <a href="#" className="text-white/40 text-xs font-body hover:text-white transition-colors">Terms</a>
           <Link href="/contact" className="text-white/40 text-xs font-body hover:text-white transition-colors">Contact</Link>
         </div>
       </div>

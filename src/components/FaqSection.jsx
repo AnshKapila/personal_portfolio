@@ -6,7 +6,7 @@ export function FaqSection() {
     const faqs = [
         {
             question: "How much does a project typically cost?",
-            answer: "Every project is custom-scoped based on your specific requirements. We focus on value-driven delivery rather than hourly billing, ensuring our incentives align with your outcomes."
+            answer: "Every project is custom-scoped based on your specific requirements. I focus on value-driven delivery rather than hourly billing, ensuring my incentives align with your outcomes."
         },
         {
             question: "What is the typical timeline?",
@@ -14,11 +14,11 @@ export function FaqSection() {
         },
         {
             question: "What does the process look like?",
-            answer: "We follow a strict Discovery > Strategy > Design > Execution > Launch protocol. You are involved at key milestones to ensure alignment, but we handle the heavy lifting."
+            answer: "I follow a strict Discovery > Strategy > Design > Execution > Launch protocol. You are involved at key milestones to ensure alignment, but I handle the heavy lifting."
         },
         {
             question: "How do we get started?",
-            answer: "Book a discovery call using the link below. We'll discuss your current bottlenecks and explore if Intent Studios is the right partner to solve them."
+            answer: "Book a discovery call using the link below. We'll discuss your current bottlenecks and explore if I am the right partner to solve them."
         }
     ];
     const [openIndex, setOpenIndex] = useState(0);

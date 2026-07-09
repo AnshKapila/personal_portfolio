@@ -6,10 +6,10 @@ export function Footer() {
         
         <div className="text-center mb-32 max-w-2xl flex flex-col justify-center items-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading italic tracking-tight mb-6">
-            Ready to execute?
+            Ready to build?
           </h2>
           <p className="text-lg font-light leading-relaxed text-gray-400 mb-10">
-            Stop waiting for perfect design. Start building systems that scale and convert.
+            Let us collaborate to build digital products that feel clean, perform fast, and engage users.
           </p>
           <a href="https://wa.me/919821687437" target="_blank" rel="noopener noreferrer" className="bg-white text-black w-full sm:w-[240px] px-8 py-4 rounded-lg font-medium text-base hover:bg-gray-200 transition-colors flex items-center justify-center">
             Book a Call
@@ -19,7 +19,7 @@ export function Footer() {
         {/* Footer Bottom Strip */}
         <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-white/10 text-gray-500 text-sm">
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-2 text-center md:text-left">
-            <span>&copy; {new Date().getFullYear()} Intent Studios. All rights reserved.</span>
+            <span>&copy; {new Date().getFullYear()} Ansh Kapila. All rights reserved.</span>
             <span className="text-white/10 hidden sm:inline">|</span>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
           </div>

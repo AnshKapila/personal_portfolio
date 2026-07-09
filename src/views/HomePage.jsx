@@ -2,11 +2,10 @@ import { Hero } from '../components/Hero';
 import { WorkSection } from '../components/WorkSection';
 import { WhoWeHelpSection } from '../components/WhoWeHelpSection';
 import { LogosSection } from '../components/LogosSection';
-import { ServicesSection } from '../components/ServicesSection';
 import { DreamShipSection } from '../components/DreamShipSection';
 import { FaqSection } from '../components/FaqSection';
 import { FounderSection } from '../components/FounderSection';
-import { WebsiteAuditTeaser } from '../components/WebsiteAuditTeaser';
+import { ExperienceSection } from '../components/ExperienceSection';
 export function HomePage({ setIsHeroBright }) {
     return (<>
       
@@ -14,8 +13,7 @@ export function HomePage({ setIsHeroBright }) {
       <WorkSection />
       <WhoWeHelpSection />
       <LogosSection />
-      <ServicesSection />
-      <WebsiteAuditTeaser />
+      <ExperienceSection />
       <FounderSection />
       {/* <SocialPresenceSection /> */}
       {/* <TestimonialsSection /> */}

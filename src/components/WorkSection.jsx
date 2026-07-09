@@ -18,20 +18,20 @@ export function WorkSection() {
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#F24E1E]/30 bg-[#F24E1E]/10 mb-6">
                 <FolderKanban className="w-3.5 h-3.5 text-[#F24E1E]"/>
                 <span className="text-[11px] font-bold uppercase tracking-widest text-[#F24E1E]">
-                  Our Transformations
+                  My Work Portfolio
                 </span>
               </div>
 
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading italic tracking-tight mb-6 text-white">
-                Featured Work. <br className="hidden lg:block"/>
+                Selected Work. <br className="hidden lg:block"/>
                 <span className="text-[#F24E1E] not-italic font-sans font-medium">
-                  Proven Results.
+                  Design Systems.
                 </span>
               </h2>
 
               <p className="text-lg font-light leading-relaxed text-gray-400 max-w-md">
-                See how we turn complex business logic into extraordinary
-                digital experiences — one project at a time.
+                Explore how I translate complex product ideas into clean
+                digital interfaces, one project at a time.
               </p>
             </div>
 
@@ -98,7 +98,7 @@ export function WorkSection() {
                       <p className="text-sm text-gray-400 font-light max-w-md leading-relaxed">{featuredProjects[activeIndex]?.listTitle || 'Web & Brand Strategy'}</p>
                     </div>
                     <div className="relative z-10 text-center text-xs font-mono text-gray-500">
-                      [ Manual Asset Placeholder — Edit in src/data/projects.ts ]
+                      [ Manual Asset Placeholder : Edit in src/data/projects.ts ]
                     </div>
                   </motion.div>) : (<motion.img key={activeIndex} src={featuredProjects[activeIndex]?.coverImage?.src || featuredProjects[activeIndex]?.coverImage} referrerPolicy="no-referrer" alt="Project visualization" initial={{ opacity: 0, scale: 1.1 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }} transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }} className="absolute inset-0 w-full h-full object-cover"/>)}
               </AnimatePresence>

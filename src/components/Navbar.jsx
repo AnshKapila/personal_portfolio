@@ -4,9 +4,8 @@ import { cn } from "../lib/utils";
 import { Logo } from "./Logo";
 import Link from 'next/link';
 import { usePathname as useLocation } from 'next/navigation';
-import { ChevronDown, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { services } from "../data/services";
 export function Navbar({ isHeroBright = false }) {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -35,28 +34,13 @@ export function Navbar({ isHeroBright = false }) {
 
         {/* Tertiary buttons/links */}
         <div className={cn("hidden md:flex items-center gap-8 lg:gap-12 text-base transition-colors duration-500 absolute left-1/2 -translate-x-1/2", linkColor)}>
+          <Link href="/" className="hover:opacity-75 transition-opacity">
+            Home
+          </Link>
+
           <Link href="/work" className="hover:opacity-75 transition-opacity">
             Work
           </Link>
-
-          <div className="relative group p-4 -m-4 flex items-center justify-center">
-            <Link href="/services" className="hover:opacity-75 transition-opacity flex items-center gap-1">
-              Services
-              <ChevronDown className="w-4 h-4 opacity-70 group-hover:rotate-180 transition-transform duration-300"/>
-            </Link>
-            <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%-4px)] w-72 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top pointer-events-none group-hover:pointer-events-auto">
-              <div className="bg-[#1A1A1A] border border-white/10 rounded-xl shadow-2xl p-2 flex flex-col gap-1">
-                {services.map((service) => (<Link key={service.slug} href={`/services/${service.slug}`} className="block px-4 py-3 rounded-lg hover:bg-white/5 transition-colors group/link">
-                    <span className="block text-sm font-medium text-white mb-1 group-hover/link:text-[#FFD1C2] transition-colors">
-                      {service.title}
-                    </span>
-                    <span className="block text-xs text-gray-400 line-clamp-2">
-                      {service.positioning}
-                    </span>
-                  </Link>))}
-              </div>
-            </div>
-          </div>
 
           <Link href="/contact" className="hover:opacity-75 transition-opacity">
             Contact
@@ -82,19 +66,12 @@ export function Navbar({ isHeroBright = false }) {
       <AnimatePresence>
         {isMobileMenuOpen && (<motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.3, ease: "easeInOut" }} className="md:hidden bg-black border-t border-white/10 overflow-hidden">
             <div className="flex flex-col p-6 gap-6">
+              <Link href="/" className="text-2xl font-heading italic text-white hover:text-[#F24E1E] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                Home
+              </Link>
               <Link href="/work" className="text-2xl font-heading italic text-white hover:text-[#F24E1E] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                 Work
               </Link>
-              <div className="flex flex-col gap-4">
-                <Link href="/services" className="text-2xl font-heading italic text-white hover:text-[#F24E1E] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                  Services
-                </Link>
-                <div className="flex flex-col gap-3 pl-4 border-l border-white/10">
-                  {services.map((service) => (<Link key={service.slug} href={`/services/${service.slug}`} className="text-base text-gray-400 hover:text-white transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
-                      {service.title}
-                    </Link>))}
-                </div>
-              </div>
               <Link href="/contact" className="text-2xl font-heading italic text-white hover:text-[#F24E1E] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                 Contact
               </Link>

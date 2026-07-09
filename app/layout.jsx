@@ -3,8 +3,8 @@ import { HeroBrightProvider } from "../src/components/HeroBrightContext";
 import { ClientLayout } from "../src/components/ClientLayout";
 
 export const metadata = {
-  title: "Intent Studios",
-  description: "Web & Product Design Studio building launch-ready digital experiences and visual systems for founders, startups, and growing brands.",
+  title: "Ansh Kapila | Product & UI/UX Designer",
+  description: "Personal design portfolio of Ansh Kapila, a Product and UI/UX Designer crafting structured, high-performing digital experiences, design systems, and interfaces.",
 };
 
 export default function RootLayout({ children }) {

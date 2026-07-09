@@ -33,7 +33,7 @@ export function GlassConfirmationModal({ isOpen, onClose, senderName }) {
             </h2>
             
             <p className="text-gray-400 font-light text-base leading-relaxed mb-8 max-w-md mx-auto">
-              Your inquiry has been delivered safely. I specialize in turning high-impact ideas into physical reality—I'll review your details and get back to you within 24 hours.
+              Your inquiry has been delivered safely. I specialize in turning high-impact ideas into physical reality (I will review your details and get back to you within 24 hours).
             </p>
 
             {/* Direct Action Links */}

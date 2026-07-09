@@ -66,7 +66,7 @@ export function Hero({ onBrightnessChange }) {
               
               <FadeIn delayMs={800} durationMs={1000} className="mb-4">
                 <p className={cn("text-lg md:text-xl max-w-xl font-light leading-relaxed transition-colors duration-1000", isBright ? "text-gray-800" : "text-gray-300")}>
-                  We help founders launch and scale their digital presence. Not just design, structured execution.
+                  I help founders design and launch their digital presence. Not just visual styling, but structured interface execution.
                 </p>
               </FadeIn>
 

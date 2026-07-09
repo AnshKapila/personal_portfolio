@@ -61,7 +61,7 @@ export function ProjectPage() {
                 </div>
               </div>
               <div className="relative z-10 text-center text-xs font-mono text-gray-500">
-                [ Manual Asset Placeholder — Edit in src/data/projects.ts ]
+                [ Manual Asset Placeholder : Edit in src/data/projects.ts ]
               </div>
             </div>) : (<img src={project.coverImage?.src || project.coverImage} referrerPolicy="no-referrer" alt={project.title} className="w-full h-auto block"/>)}
         </FadeIn>
@@ -109,7 +109,7 @@ export function ProjectPage() {
                     <p className="text-sm text-gray-400 font-light max-w-md">Design Strategy & Interface Flow Demonstration</p>
                   </div>
                   <div className="relative z-10 text-center text-xs font-mono text-gray-500">
-                    [ Manual Asset Placeholder — Edit in src/data/projects.ts ]
+                    [ Manual Asset Placeholder : Edit in src/data/projects.ts ]
                   </div>
                 </div>) : (<img src={project.detailImage1?.src || project.detailImage1} referrerPolicy="no-referrer" alt="Project detail 1" className="w-full h-auto"/>)}
             </div>)}
@@ -124,7 +124,7 @@ export function ProjectPage() {
                     <p className="text-sm text-gray-400 font-light max-w-md">Design System and Token Hierarchy Analysis</p>
                   </div>
                   <div className="relative z-10 text-center text-xs font-mono text-gray-500">
-                    [ Manual Asset Placeholder — Edit in src/data/projects.ts ]
+                    [ Manual Asset Placeholder : Edit in src/data/projects.ts ]
                   </div>
                 </div>) : (<img src={project.detailImage2?.src || project.detailImage2} referrerPolicy="no-referrer" alt="Project detail 2" className="w-full h-auto"/>)}
             </div>)}
@@ -139,7 +139,7 @@ export function ProjectPage() {
                     <h3 className="text-3xl md:text-4xl font-heading italic tracking-tight text-white mb-2 leading-tight">{project.title} Showcase Campaign</h3>
                   </div>
                   <div className="relative z-10 text-right text-xs font-mono text-gray-500">
-                    [ Manual Asset Placeholder — Edit in src/data/projects.ts ]
+                    [ Manual Asset Placeholder : Edit in src/data/projects.ts ]
                   </div>
                 </div>) : (<img src={project.bannerImage?.src || project.bannerImage} referrerPolicy="no-referrer" alt="Project banner" className="w-full h-auto"/>)}
             </div>)}

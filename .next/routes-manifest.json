@@ -67,6 +67,12 @@
       "namedRegex": "^/privacy(?:/)?$"
     },
     {
+      "page": "/skills",
+      "regex": "^/skills(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/skills(?:/)?$"
+    },
+    {
       "page": "/work",
       "regex": "^/work(?:/)?$",
       "routeKeys": {},

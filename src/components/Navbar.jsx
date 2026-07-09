@@ -42,6 +42,10 @@ export function Navbar({ isHeroBright = false }) {
             Work
           </Link>
 
+          <Link href="/skills" className="hover:opacity-75 transition-opacity">
+            Skills
+          </Link>
+
           <Link href="/contact" className="hover:opacity-75 transition-opacity">
             Contact
           </Link>
@@ -71,6 +75,9 @@ export function Navbar({ isHeroBright = false }) {
               </Link>
               <Link href="/work" className="text-2xl font-heading italic text-white hover:text-[#F24E1E] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                 Work
+              </Link>
+              <Link href="/skills" className="text-2xl font-heading italic text-white hover:text-[#F24E1E] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
+                Skills
               </Link>
               <Link href="/contact" className="text-2xl font-heading italic text-white hover:text-[#F24E1E] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                 Contact

@@ -11,6 +11,10 @@ import fitChampCover from '../assets/images/fitChampCover.png';
 import fitChampDetail1 from '../assets/images/fitChampDetail1.png';
 import fitChampDetail2 from '../assets/images/fitChampDetail2.png';
 import fitChampBanner from '../assets/images/fitChampBanner.png';
+import forwardCover from '../assets/images/forwardCover.png';
+import forwardDetail1 from '../assets/images/forwardDetail1.png';
+import forwardDetail2 from '../assets/images/forwardDetail2.png';
+import forwardBanner from '../assets/images/forwardBanner.png';
 import fintrackCover from '../assets/images/regenerated_image_1778698805205.png';
 import fintrackDetail1 from '../assets/images/regenerated_image_1778692162081.png';
 import fintrackDetail2 from '../assets/images/regenerated_image_1778692166248.png';
@@ -81,8 +85,28 @@ const damacDetail2 = createPlaceholder("Damac Violet", "Exclusive Real Estate Ca
 const damacBanner = createPlaceholder("Damac Violet", "Dubai Residential Project Presentation", "#1e1b4b", "#f43f5e");
 export { damacBanner, damacDetail1, damacDetail2, damacCover, bergariaBanner, 
 // Export new manual SVG placeholders to make them easily referenceable/replaceable
-clickpickCover, clickpickDetail1, clickpickDetail2, clickpickBanner, spatialdigestCover_img, spatialdigestCover, spatialdigestDetail1, spatialdigestDetail2, spatialdigestBanner, spatialdigestCitySkyline, metlineCover, metlineDetail1, metlineDetail2, metlineBanner, fityardCover, fityardDetail1, fityardDetail2, fityardBanner, vigorxCover, vigorxDetail1, vigorxDetail2, vigorxBanner, ezinoreCover, ezinoreDetail1, ezinoreDetail2, ezinoreBanner, ezinoreLogo, spatialDigestLogo, metlineLogo, eqologiqCover, eqologiqDetail1, eqologiqDetail2, eqologiqBanner, fitChampCover, fitChampDetail1, fitChampDetail2, fitChampBanner };
+clickpickCover, clickpickDetail1, clickpickDetail2, clickpickBanner, spatialdigestCover_img, spatialdigestCover, spatialdigestDetail1, spatialdigestDetail2, spatialdigestBanner, spatialdigestCitySkyline, metlineCover, metlineDetail1, metlineDetail2, metlineBanner, fityardCover, fityardDetail1, fityardDetail2, fityardBanner, vigorxCover, vigorxDetail1, vigorxDetail2, vigorxBanner, ezinoreCover, ezinoreDetail1, ezinoreDetail2, ezinoreBanner, ezinoreLogo, spatialDigestLogo, metlineLogo, eqologiqCover, eqologiqDetail1, eqologiqDetail2, eqologiqBanner, fitChampCover, fitChampDetail1, fitChampDetail2, fitChampBanner, forwardCover, forwardDetail1, forwardDetail2, forwardBanner };
 const allProjects = [
+    {
+        slug: "the-forward-org",
+        title: "The Forward Org",
+        tags: ["AI Strategy", "Web Engineering", "Conversion Optimization", "Product Strategy"],
+        coverImage: forwardCover,
+        listTitle: "AI Strategy & Leadership Advisor Hub",
+        listSubtitle: "",
+        overviewHeading: "Project Overview",
+        overviewDescription: "Pan Seth is an AI strategy and leadership advisor holding two AI patents and a decade of enterprise experience inside Citi, PagerDuty, and NielsenIQ. I was tasked with replacing her text-heavy, mobile-broken, and platform-dependent website with a high-caliber brand presence. The brief required creating a conversion-focused platform rather than a brochure—speaking directly to senior C-suite decision-makers, engaging influencing practitioners, and establishing an automated lead qualification funnel before advisory calls.\n\nBefore design began, I resolved critical strategic contradictions regarding brand voice, conflicting color palettes, and audience targeting. While aiming for C-suite buyers, the conversion path also needed to engage mid-level practitioner influencers. I mapped an information architecture supporting both immediate lead qualification and the long-term brand equity of Pan's advisory practice.",
+        strategyHeading: "Strategy, Design, and Execution",
+        strategyDescription1: "To avoid generic corporate AI aesthetics like navy blue and white, I crafted an institutional editorial visual identity. The palette features Deep Forest Green as primary, Warm Sand as canvas, and Antique Gold accents (<10% area). Typography pairs Libre Baskerville headings with Figtree body text for sharp visual authority. An 8-point grid, zero border radius, and calibrated motion curves deliver an unhurried, premium editorial experience.",
+        strategyDescription2: "I engineered a multi-page architecture including a custom React AI Alignment Index, About page, Masterclass portal, and pre-qualification booking flow. The AI Alignment Index delivers a 5-dimension readiness scorecard. A 2-question qualification gate screens calendar access, piping leads directly to Brevo via Vercel serverless functions—replacing fragile Google Apps Script dependencies. The private Masterclass page handles attendee registrations and Stripe payment flows.",
+        detailImage1: forwardDetail1,
+        detailImage2: forwardDetail2,
+        outcomeHeading: "Problems, Solutions & Impact",
+        outcomeDescription: "Performance & Architecture Optimization: Performance bottlenecks caused severe scroll lag and modal delays. I resolved five root causes simultaneously: eliminated duplicate motion/framer-motion package conflicts, replaced a tree-walking ScrollReveal component creating 80+ Intersection Observers, fixed a modal animation duration bug (250s vs 250ms), moved Google Fonts from CSS imports to render-blocking-free HTML links, and enabled image lazy-loading across all pages.\n\nCopy Direction & Voice Calibration: Conflicting copy documents created voice ambiguity between personal and organizational tones. I solved this by extracting key anchor statements from Pan's authentic practitioner writing—specifically focusing on AI decision-making restructuring over tool deployment—and recalibrating the site's entire content register around those core principles.\n\nValue Generated & Strategic Foundation: I delivered a high-converting digital platform functioning as an automated qualification engine. The AI Alignment Index delivers personalized 5-dimension scores, while the pre-qualification booking flow provides Pan with structured context before approving calls. Integrated Brevo data pipelines capture and segment lead intent across all four conversion touchpoints.\n\nCurrent Progress & Scalability: The core platform is live and fully operational. Remaining launch items include replacing structural Masterclass testimonials, verifying financial attribution figures, transferring domain/repository ownership, and adding LinkedIn newsletter redirects. The architecture is engineered to scale seamlessly for future service expansions and content pipelines.",
+        buttonText: "View Live Website",
+        buttonLink: "https://theforwardorg.com/",
+        bannerImage: forwardBanner
+    },
     {
         slug: "fitness-champion",
         title: "Fitness Champion",

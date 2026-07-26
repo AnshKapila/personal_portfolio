@@ -1,6 +1,30 @@
 {
   "version": 4,
   "routes": {
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/skills": {
       "experimentalBypassFor": [
         {
@@ -25,7 +49,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/privacy": {
+    "/work": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -38,8 +62,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/privacy",
-      "dataRoute": "/privacy.rsc",
+      "srcRoute": "/work",
+      "dataRoute": "/work.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -98,7 +122,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/work": {
+    "/privacy": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -111,8 +135,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/work",
-      "dataRoute": "/work.rsc",
+      "srcRoute": "/privacy",
+      "dataRoute": "/privacy.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -338,6 +362,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/work/the-forward-org": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/work/[slug]",
+      "dataRoute": "/work/the-forward-org.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/work/vigorx": {
       "experimentalBypassFor": [
         {
@@ -353,30 +401,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/work/[slug]",
       "dataRoute": "/work/vigorx.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",

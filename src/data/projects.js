@@ -3,6 +3,10 @@ import bergariaCover from '../assets/images/regenerated_image_1778648802440.jpg'
 import bergariaDetail1 from '../assets/images/regenerated_image_1778648472194.jpg';
 import bergariaDetail2 from '../assets/images/regenerated_image_1778648465172.png';
 import bergariaBanner from '../assets/images/regenerated_image_1779824720726.png';
+import eqologiqCover from '../assets/images/eqologiqCover.jpg';
+import eqologiqDetail1 from '../assets/images/eqologiqDetail1.jpg';
+import eqologiqDetail2 from '../assets/images/eqologiqDetail2.jpg';
+import eqologiqBanner from '../assets/images/eqologiqBanner.jpg';
 import fintrackCover from '../assets/images/regenerated_image_1778698805205.png';
 import fintrackDetail1 from '../assets/images/regenerated_image_1778692162081.png';
 import fintrackDetail2 from '../assets/images/regenerated_image_1778692166248.png';
@@ -73,7 +77,7 @@ const damacDetail2 = createPlaceholder("Damac Violet", "Exclusive Real Estate Ca
 const damacBanner = createPlaceholder("Damac Violet", "Dubai Residential Project Presentation", "#1e1b4b", "#f43f5e");
 export { damacBanner, damacDetail1, damacDetail2, damacCover, bergariaBanner, 
 // Export new manual SVG placeholders to make them easily referenceable/replaceable
-clickpickCover, clickpickDetail1, clickpickDetail2, clickpickBanner, spatialdigestCover_img, spatialdigestCover, spatialdigestDetail1, spatialdigestDetail2, spatialdigestBanner, spatialdigestCitySkyline, metlineCover, metlineDetail1, metlineDetail2, metlineBanner, fityardCover, fityardDetail1, fityardDetail2, fityardBanner, vigorxCover, vigorxDetail1, vigorxDetail2, vigorxBanner, ezinoreCover, ezinoreDetail1, ezinoreDetail2, ezinoreBanner, ezinoreLogo, spatialDigestLogo, metlineLogo };
+clickpickCover, clickpickDetail1, clickpickDetail2, clickpickBanner, spatialdigestCover_img, spatialdigestCover, spatialdigestDetail1, spatialdigestDetail2, spatialdigestBanner, spatialdigestCitySkyline, metlineCover, metlineDetail1, metlineDetail2, metlineBanner, fityardCover, fityardDetail1, fityardDetail2, fityardBanner, vigorxCover, vigorxDetail1, vigorxDetail2, vigorxBanner, ezinoreCover, ezinoreDetail1, ezinoreDetail2, ezinoreBanner, ezinoreLogo, spatialDigestLogo, metlineLogo, eqologiqCover, eqologiqDetail1, eqologiqDetail2, eqologiqBanner };
 const allProjects = [
     {
         slug: "vigorx",
@@ -116,6 +120,26 @@ const allProjects = [
         buttonText: "Full Case Study (Ongoing)",
         buttonLink: "https://www.behance.net/gallery/240796063/Clickpic-(Ongoing)-College-App-for-Print-Campus",
         bannerImage: clickpickBanner
+    },
+    {
+        slug: "eqologiq",
+        title: "Eqologiq",
+        tags: ["E-commerce", "Headless", "Next.js", "WooCommerce", "SEO Strategy"],
+        coverImage: eqologiqCover,
+        listTitle: "D2C Sustainable E-commerce Foundation",
+        listSubtitle: "",
+        overviewHeading: "Project Overview",
+        overviewDescription: "Eqologiq is an Indian direct-to-consumer brand selling plastic-free steel water bottles and vegan oral care products. The founder Vaibhav started the brand with a clear mission: to offer genuinely plastic-free daily essentials at a time when most competitors were using plastic in hidden components like caps, coatings, and seals while marketing themselves as sustainable. When the project came to me, Eqologiq had a live WooCommerce store on Hostinger shared hosting and a basic web presence that did not reflect the seriousness of the product or the strength of the brand story. The brief was to build something that looked credible, converted visitors into buyers, and gave the brand a foundation to grow on.\n\nMy scope expanded significantly once I started. What began as a website redesign became a full brand system, a content strategy, a technical SEO implementation, and a headless frontend architecture built on Next.js with WooCommerce as the backend. My role covered brand direction, UX, visual design, copywriting, and the full technical SEO layer. The final deliverable is a statically exported Next.js site hosted on Hostinger, pulling live product and blog data from WooCommerce at build time, with complete crawler optimisation and structured data for both traditional search and AI search engines.",
+        strategyHeading: "Strategy, Design, and Execution",
+        strategyDescription1: "The first major design decision was the color system. I extracted the two dominant colors directly from the Eqologiq logo: a teal blue (#006B96) and a yellow-green (#99BD05), avoiding a third sky blue (#2AD2FF) for text to maintain strict contrast accessibility. The copywriting strategy focused on stating facts clearly without corporate fluff, landing on the hero headline: 'Built for every day. Made without compromise.'",
+        strategyDescription2: "The Qrash Qourse educational section was restructured as a knowledge hub with cited sources rather than a blog, which strengthened both the brand credibility and the SEO signal for informational keywords around plastic and health research.",
+        detailImage1: eqologiqDetail1,
+        detailImage2: eqologiqDetail2,
+        outcomeHeading: "Problems, Solutions & Impact",
+        outcomeDescription: "Hosting & SEO Strategy: The client's Hostinger shared hosting didn't support Node.js servers, making Server-Side Rendering impossible. To solve this without sacrificing dynamic product SEO, I utilized Next.js static site generation (SSG) with static export. Every product page, sitemap, and schema is pre-rendered at build time from WooCommerce API.\n\nImage Asset Control: All prototype images were linked to an external Cloudinary CDN. I audited and downloaded every asset locally into the Next.js public directory to eliminate external dependencies.\n\nFinal Performance: The new site features dynamic sitemaps, robots configurations, breadcrumb/FAQ schema, and a structured `llms.txt` file for AI crawlers (Perplexity/ChatGPT), providing a robust, headless ecommerce foundation.",
+        buttonText: "Check Out Live Website",
+        buttonLink: "https://eqologiq.in/",
+        bannerImage: eqologiqBanner
     },
     {
         slug: "fintrack",

@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   const project = projects.find((p) => p.slug === resolvedParams.slug);
   if (!project) return { title: "Not Found" };
   return {
-    title: `${project.title} | Intent Studio`,
+    title: `${project.title} | Ansh Kapila`,
     description: project.description,
   };
 }

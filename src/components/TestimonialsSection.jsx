@@ -10,7 +10,7 @@ export function TestimonialsSection() {
             avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=150&h=150&auto=format&fit=crop"
         },
         {
-            quote: "Intent was professional, fast, and the final web platform truly blew us away. Fully Satisfied!",
+            quote: "Ansh was professional, fast, and the final web platform truly blew us away. Fully Satisfied!",
             name: "Priya R.",
             role: "Sacramento",
             avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&h=150&auto=format&fit=crop"
@@ -44,7 +44,7 @@ export function TestimonialsSection() {
               What Our <span className="text-[#F24E1E] font-sans not-italic font-medium">Clients</span> Are Saying
             </h2>
             <p className="text-lg font-light leading-relaxed text-gray-400">
-              Real stories from founders who trusted Intent Studios for their products.
+              Real stories from founders who trusted Ansh Kapila for their products.
             </p>
           </motion.div>
 
@@ -78,7 +78,7 @@ export function TestimonialsSection() {
           {/* Featured Content Area */}
           <div className="relative z-10 p-8 md:p-10 border-t border-white/10 bg-black/40 backdrop-blur-sm">
              <p className="text-white md:text-lg lg:text-xl font-medium leading-relaxed tracking-wide mb-6">
-               "From the very first consultation, Intent Studios felt like the right choice. The team was organized, transparent, and truly cared about the details. Our platform feels brand new."
+               "From the very first consultation, Ansh Kapila felt like the right choice. He was organized, transparent, and truly cared about the details. Our platform feels brand new."
              </p>
              <p className="text-[#F24E1E] font-bold text-sm tracking-wide">
                - Tanya L., <span className="font-normal text-gray-400">VP Product, ShiftTech</span>

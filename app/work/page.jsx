@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Work | Intent Studio",
+  title: "Work | Ansh Kapila",
 };
 import { WorkPage } from "../../src/views/WorkPage";
 

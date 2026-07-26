@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Not Found | Intent Studio",
+  title: "Not Found | Ansh Kapila",
 };
 import { NotFoundPage } from "../src/views/NotFoundPage";
 

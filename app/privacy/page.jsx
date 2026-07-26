@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Privacy Policy | Intent Studio",
+  title: "Privacy Policy | Ansh Kapila",
 };
 import { PrivacyPage } from "../../src/views/PrivacyPage";
 

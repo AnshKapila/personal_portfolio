@@ -4,6 +4,6 @@
   "/contact/page": "/contact",
   "/privacy/page": "/privacy",
   "/skills/page": "/skills",
-  "/work/page": "/work",
-  "/work/[slug]/page": "/work/[slug]"
+  "/work/[slug]/page": "/work/[slug]",
+  "/work/page": "/work"
 }
